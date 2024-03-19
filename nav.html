@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 45px;
+        background: linear-gradient(
+          to right,
+          aqua,
+          blue,
+          violet,
+          aqua,
+          blue,
+          violet
+        );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+
+      #we {
+        margin-left: 40px;
+        border: none;
+        border-bottom: 2px solid grey;
+        margin-bottom: 35px;
+      }
+
+      #me {
+        margin-left: 40px;
+        border: none;
+        border-bottom: 2px solid grey;
+        margin-bottom: 35px;
+      }
+
+      #ne {
+        border: none;
+        margin-left: 40px;
+        border-bottom: 2px solid grey;
+        margin-bottom: 35px;
+        width: 43vw;
+      }
+
+      #bn {
+        margin-left: 40px;
+        width: 10vw;
+        height: 5vh;
+        background: linear-gradient(to right, aqua, blue, violet);
+        color: white;
+        border: none;
+        text-transform: uppercase;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to right, aqua, blue, violet);
+      }
+
+      .box {
+        width: 70vw;
+        height: 50vh;
+        background-color: #fff;
+      }
+      #we,
+      #me {
+        width: 30vw;
+      }
+      #ne {
+        width: 90%;
+      }
+      @media (max-width: 600px) {
+        .box {
+          width: 60vw;
+          height: 90vh;
+        }
+        #bn {
+          width: 15vw;
+        }
+        #ne {
+          width: 30vw;
+        }
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <div class="box">
+      <h1>Responsive Contact Us Form</h1>
+      <input id="we" type="text" placeholder="First Name" />
+      <input id="we" type="text" placeholder="Last Name" />
+      <br />
+      <input id="me" type="text" placeholder="Email Address" />
+      <input id="me" type="text" placeholder="Website Name" />
+      <br />
+
+      <input id="ne" type="text" placeholder="Write Your Message" /><br />
+
+      <input id="bn" type="submit" onclick="p()" value="Submit" />
+    </div>
+    <script>
+      let p = () => {
+        alert("hi");
+        location.reload();
+      };
+    </script>
+  </body>
+</html>
